@@ -8,64 +8,78 @@ export default {
     components: {
         RouterLink,
     },
+    mounted() {
+    
+    
+  },
 }
 </script>
 
 <template>
-    <h1 class="title_JP">周防有希ボタン</h1>
-    <h1 class="title_EN">Suō Yuki Button</h1>
-    <!-- <div class="headerShow"> -->
-        <!-- <RouterLink to="/" class="routerItem">周防有希ボタン</RouterLink> -->
+    <div class="headerShow">
+        <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
         
 
-        <!-- <RouterLink to="AboutView" class="routerItem">AboutView</RouterLink> -->
-    <!-- </div> -->
+        <RouterLink to="AboutUs" class="goAboutUs">About</RouterLink>
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">About</a></li>
+    <li><a class="dropdown-item" href="#">Services</a></li>
+    <li><a class="dropdown-item" href="#">Contact</a></li>
+  </ul>
+</div>
+    </div>
+
+    
+    
 </template>
 
 
 <style scoped lang="scss">
 
-.title_JP {
-    margin: 0 auto 0.3rem auto;
-    margin-top: 5dvh;
-    display: flex;
-    justify-content: center;
-    align-content:center;
-        font-family: 'Press Start 2P', 'Kosugi Maru', cursive;
-        color: rgba(246, 75, 95, 0.992);
-        font-size: 3rem;
-        text-decoration: none;
-        text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    .title_EN{
-    margin: 0 auto 0.3rem auto;
-    margin-top: 5dvh;
-    display: flex;
-    justify-content: center;
-    align-content:center;
-        font-family: 'Press Start 2P', 'Kosugi Maru', cursive;
-        color: rgba(246, 75, 95, 0.992);
-        font-size: 1.5rem;
-        text-decoration: none;
-        text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.15);
-    }
-
 .headerShow {
     width: 100%;
-    min-height: 15dvh;
-    background-color: pink;
+    min-height: 10dvh;
+        // background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-bottom-left-radius: 10px; /* 左下角圓角 */
+        border-bottom-right-radius: 10px; /* 右下角圓角 */
     display: flex;
-    justify-content: center;
-    align-content:center;
-    letter-spacing: 2px;
+    justify-content: space-between;
+    // justify-content: center;
+    align-items: center;
+    // letter-spacing: 2px;
     // font-family: 'Press Start 2P', 'keifontregular', 'Kosugi Maru', cursive;
+
+    .goHomePage{
+        font-family: "Noto Sans TC", sans-serif;
+        margin-left: 5%;
+        color:#909FA6;
+    }
+
+    .goAboutUs{
+        font-family: "Matemasie", sans-serif;
+        display: none;
+    }
 
     
 
     a {
-        // margin-right: 20px;
-        padding-top: 5dvh;
+        // margin: 0 auto 0.3rem auto;
+    // margin-top: 5dvh;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+        // font-family: 'Press Start 2P', 'Kosugi Maru';
+        color: rgba(246, 75, 95, 0.992);
+        font-size: 1.2em;
+        text-decoration: none;
+        text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
 
         // &:hover {
         //     border-radius: 10px;
@@ -80,23 +94,44 @@ export default {
         //     background-color: rgba(0, 0, 0, 0.344);
         // }
     }
+
+    .dropdown{
+        margin-right: 4%;
+        font-family: "Noto Sans TC", sans-serif;
+
+        .btn-secondary.dropdown-toggle::after {
+            display: none;
+        }
+
+        .btn-secondary:focus {
+            outline: none;
+            box-shadow: none;
 }
+
+        .btn-secondary{
+            font-size: 0.9em;
+            background-color: rgb(208, 209, 221);
+            border: 1px solid rgb(208, 209, 221);
+        }
+
+
+        .dropdown-item{
+        font-family: "Matemasie", sans-serif;
+
+        }
+    }
+
+    
+
+    
+}
+
+
 
 
 /* PC: 1200px 以上 */
 @media (min-width: 1200px) {
 
-    .title_JP {
-        margin-top: 5.5dvh;
-        font-size: 5rem;
-        
-    }
-    
-    .title_EN {
-        margin-top: 5.5dvh;
-        font-size: 3rem;
-        
-    }
 
   
 }
