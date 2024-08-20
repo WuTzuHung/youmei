@@ -26,9 +26,9 @@ export default {
     <i class="fa-solid fa-bars"></i>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">About</a></li>
-    <li><a class="dropdown-item" href="#">Services</a></li>
-    <li><a class="dropdown-item" href="#">Contact</a></li>
+    <li><a class="dropdown-item" href="#">關於我們</a></li>
+    <li><a class="dropdown-item" href="#">服務項目</a></li>
+    <li><a class="dropdown-item" href="#">聯絡我們</a></li>
   </ul>
 </div>
     </div>
@@ -42,10 +42,11 @@ export default {
 
 .headerShow {
     position: relative; /* 确保它可以有 z-index */
-  z-index: 1000; /* 设置一个高的 z-index 值 */
+    z-index: 1000; /* 设置一个高的 z-index 值 */
     width: 100%;
     min-height: 10dvh;
         // background: rgba( 255, 255, 255, 0.25 );
+        // background-color: white;
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
@@ -65,7 +66,7 @@ export default {
     }
 
     .goAboutUs{
-        font-family: "Matemasie", sans-serif;
+        font-family: "Noto Sans TC", sans-serif;
         display: none;
     }
 
@@ -118,8 +119,7 @@ export default {
 
 
         .dropdown-item{
-        font-family: "Matemasie", sans-serif;
-
+            font-family: "Noto Sans TC", sans-serif;
         }
     }
 
