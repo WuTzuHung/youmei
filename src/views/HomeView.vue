@@ -42,17 +42,17 @@ body {
 }
 
 
-.passing-total{
+.passing-total {
   display: flex;
   flex-direction: column;
 }
 
-.passing-txt{
+.passing-txt {
   font-size: 1.8em;
-    font-family: "Noto Sans TC", sans-serif;
-    color:#909FA6;
-    /* text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15); */
-
+  font-family: "Noto Sans TC", sans-serif;
+  color: #909FA6;
+  opacity: 0; /* 初始状态隐藏文字 */
+  transition: opacity 0.4s ease-in-out; /* 确保文字显示有过渡效果 */
 }
 
 .passing-2 {
@@ -79,7 +79,11 @@ body {
 }
 
 .passing-2.move .passing-bar::before {
-  animation: passing-bar-animation 0.5s ease forwards, passing-bar-disappear-animation 0.5s ease forwards 0.5s;
+  animation: passing-bar-animation 0.4s ease forwards, passing-bar-disappear-animation 0.4s ease forwards 0.4s;
+}
+
+.passing-2.move .passing-txt {
+  animation: text-appear-animation 0.4s ease forwards 0.4s; /* 动画结束后显示文字 */
 }
 
 @keyframes passing-bar-animation {
@@ -99,6 +103,15 @@ body {
   100% {
     width: 0;
     left: 100%;
+  }
+}
+
+@keyframes text-appear-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
