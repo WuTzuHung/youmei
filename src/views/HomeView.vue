@@ -39,6 +39,8 @@ onMounted(() => {
 body {
   /* font-family: 'Noto Sans JP', sans-serif; */
   background-color: rgba(182, 180, 177, 0.25);
+  position: relative; /* 确保它可以有 z-index */
+  z-index: 500; /* 设置一个低于 Header.vue 的 z-index 值 */
 }
 
 

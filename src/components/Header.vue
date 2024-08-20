@@ -41,6 +41,8 @@ export default {
 <style scoped lang="scss">
 
 .headerShow {
+    position: relative; /* 确保它可以有 z-index */
+  z-index: 1000; /* 设置一个高的 z-index 值 */
     width: 100%;
     min-height: 10dvh;
         // background: rgba( 255, 255, 255, 0.25 );
