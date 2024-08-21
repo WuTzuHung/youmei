@@ -30,10 +30,10 @@ export default {
         <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
       <div class="logo"></div>
       <ul :class="{'menu': true, 'menu-show': isMenuVisible}">
-        <li><a href="#">選單1</a></li>
-        <li><a href="#">選單2</a></li>
-        <li><a href="#">選單3</a></li>
-        <li><a href="#">選單4</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">服務項目</a></li>
+        <li><a href="#">聯絡我們</a></li>
+        <li><a href="#">回首頁</a></li>
       </ul>
       <a href="#" class="showmenu" @click.prevent="toggleMenu">menu</a>
     </div>
@@ -124,9 +124,10 @@ export default {
   position: fixed;
   width: 100%;
 //   background: #0f222b;
-background-color: rgba(182, 180, 177, 0.25);
+// background-color: rgba(182, 180, 177, 0.25);
 
 .goHomePage{
+        font-size: 1.2em;
         font-family: "Noto Sans TC", sans-serif;
         margin-left: 5%;
         color:#909FA6;
@@ -144,7 +145,7 @@ background-color: rgba(182, 180, 177, 0.25);
   top: 55px;
   width: 100%;
   text-align: center;
-  background: #0f222b;
+  background: white;
   transition: max-height 0.5s;
 
   //把左邊跑出來的marker去掉
@@ -154,11 +155,21 @@ background-color: rgba(182, 180, 177, 0.25);
 }
 
 .menu li {
-  border: 1px dashed #69ca62;
+  // border: 1px dashed #69ca62;
+  height: 10dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu li a {
   transition: all 0.5s;
+  text-decoration: none;
+  width: 100%;
+  height: 10dvh;
+  padding: 12px 18px;
+
+
 }
 
 .menu li a:hover {
