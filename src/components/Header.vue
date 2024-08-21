@@ -3,36 +3,41 @@ import { RouterLink, RouterView } from 'vue-router'
 export default {
     data() {
         return {
+            isMenuVisible: false,
         }
     },
     components: {
         RouterLink,
     },
-    mounted() {
-    
-    
+    methods: {
+    toggleMenu() {
+      this.isMenuVisible = !this.isMenuVisible;
+    },
   },
-}
+};
 </script>
 
 <template>
-    <div class="headerShow">
+    <!-- <div class="headerShow">
         <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
         
 
         <RouterLink to="AboutUs" class="goAboutUs">About</RouterLink>
-        <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">關於我們</a></li>
-    <li><a class="dropdown-item" href="#">服務項目</a></li>
-    <li><a class="dropdown-item" href="#">聯絡我們</a></li>
-  </ul>
-</div>
+        
+    </div> -->
+    <div class="wrap">
+    <div class="headerTop">
+        <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
+      <div class="logo"></div>
+      <ul :class="{'menu': true, 'menu-show': isMenuVisible}">
+        <li><a href="#">選單1</a></li>
+        <li><a href="#">選單2</a></li>
+        <li><a href="#">選單3</a></li>
+        <li><a href="#">選單4</a></li>
+      </ul>
+      <a href="#" class="showmenu" @click.prevent="toggleMenu">menu</a>
     </div>
-
+  </div>
     
     
 </template>
@@ -41,8 +46,6 @@ export default {
 <style scoped lang="scss">
 
 .headerShow {
-    position: relative; /* 确保它可以有 z-index */
-    z-index: 1000; /* 设置一个高的 z-index 值 */
     width: 100%;
     min-height: 10dvh;
         // background: rgba( 255, 255, 255, 0.25 );
@@ -98,38 +101,82 @@ export default {
         // }
     }
 
-    .dropdown{
-        margin-right: 4%;
-        font-family: "Noto Sans TC", sans-serif;
-
-        .btn-secondary.dropdown-toggle::after {
-            display: none;
-        }
-
-        .btn-secondary:focus {
-            outline: none;
-            box-shadow: none;
 }
 
-        .btn-secondary{
-            font-size: 0.9em;
-            background-color: rgb(208, 209, 221);
-            border: 1px solid rgb(208, 209, 221);
-        }
+.wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
+.headerTop {
+    position: relative; /* 确保它可以有 z-index */
+    z-index: 1000; /* 设置一个低于 Header.vue 的 z-index 值 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .dropdown-item{
-            font-family: "Noto Sans TC", sans-serif;
-        }
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        // border-bottom-left-radius: 10px; /* 左下角圓角 */
+        // border-bottom-right-radius: 10px; /* 右下角圓角 */
+
+  position: fixed;
+  width: 100%;
+//   background: #0f222b;
+background-color: rgba(182, 180, 177, 0.25);
+
+.goHomePage{
+        font-family: "Noto Sans TC", sans-serif;
+        margin-left: 5%;
+        color:#909FA6;
+        text-decoration: none;
+        text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
-    
-
-    
 }
 
+.menu {
+  max-height: 0px;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  text-align: center;
+  background: #0f222b;
+  transition: max-height 0.5s;
 
+  //把左邊跑出來的marker去掉
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+  margin: 0;  /* Remove default margin */
+}
 
+.menu li {
+  border: 1px dashed #69ca62;
+}
+
+.menu li a {
+  transition: all 0.5s;
+}
+
+.menu li a:hover {
+  background: #69ca62;
+  color: #fff;
+}
+
+.showmenu {
+  display: block;
+  color: #69ca62;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.menu-show {
+  max-height: 60dvh;
+  width: 100%;
+}
 
 /* PC: 1200px 以上 */
 @media (min-width: 1200px) {
