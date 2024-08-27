@@ -19,6 +19,7 @@ onMounted(() => {
 
 <template>
 
+<div class="Second">
   <div class="passing-total">
 <p class="passing-2" ref="passingElement1">
   <span class="passing-bar">
@@ -31,7 +32,15 @@ onMounted(() => {
       </span>
     </p>
   </div>
+</div>
 
+<div class="Third">
+
+</div>
+
+<div class="Fourth">
+
+</div>
 </template>
 
 <style>
@@ -43,6 +52,12 @@ body {
   z-index: 500; /* 设置一个低于 Header.vue 的 z-index 值 */
 }
 
+.Second{
+  width: 100%;
+  height: 18dvh;
+  /* background-color: white; */
+}
+
 
 .passing-total {
   display: flex;
@@ -51,6 +66,7 @@ body {
 
 .passing-txt {
   font-size: 1.8em;
+  font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
   color: #909FA6;
   opacity: 0; /* 初始状态隐藏文字 */
@@ -115,6 +131,18 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.Third{
+  width: 100%;
+  height: 110dvh;
+  /* background-color: white; */
+}
+
+.Fourth{
+  width: 100%;
+  height: 30dvh;
+  background-color: white;
 }
 
 

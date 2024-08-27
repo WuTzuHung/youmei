@@ -28,14 +28,18 @@ export default {
     <div class="wrap">
     <div class="headerTop">
         <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
-      <div class="logo"></div>
+      <!-- <div class="logo"></div> -->
       <ul :class="{'menu': true, 'menu-show': isMenuVisible}">
-        <li><a href="#">關於我們</a></li>
-        <li><a href="#">服務項目</a></li>
-        <li><a href="#">聯絡我們</a></li>
-        <li><a href="#">回首頁</a></li>
+        <li><a href="#">關於我們<div class="aLine"></div></a></li>
+        
+        <li><a href="#">服務項目<div class="aLine"></div></a></li>
+        
+        <li><a href="#">聯絡我們<div class="aLine"></div></a></li>
+        
+        <li><a href="#">回首頁<div class="aLine"></div></a></li>
+        
       </ul>
-      <a href="#" class="showmenu" @click.prevent="toggleMenu">menu</a>
+      <a href="#" class="showmenu" @click.prevent="toggleMenu"><i class="fa-solid fa-bars"></i></a>
     </div>
   </div>
     
@@ -114,7 +118,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
@@ -123,13 +127,17 @@ export default {
 
   position: fixed;
   width: 100%;
+
+  margin: 0;
 //   background: #0f222b;
 // background-color: rgba(182, 180, 177, 0.25);
 
 .goHomePage{
-        font-size: 1.2em;
+        font-size: 1.4em;
+        font-weight: 746;
+
         font-family: "Noto Sans TC", sans-serif;
-        margin-left: 5%;
+        margin-left: 4%;
         color:#909FA6;
         text-decoration: none;
         text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
@@ -142,7 +150,7 @@ export default {
   overflow: hidden;
   display: block;
   position: absolute;
-  top: 55px;
+  top: 9.4dvh;
   width: 100%;
   text-align: center;
   background: white;
@@ -160,33 +168,69 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 
 .menu li a {
-  transition: all 0.5s;
+  color:#909FA6;
+  font-weight: 400;
+  font-family: "Noto Sans TC", sans-serif;
+
+  // transition: all 0.5s;
   text-decoration: none;
   width: 100%;
   height: 10dvh;
   padding: 12px 18px;
+  margin: 0;
 
 
 }
 
 .menu li a:hover {
-  background: #69ca62;
-  color: #fff;
+  background: #FFD8F0;
+  color: #FF00FF;
+}
+
+.menu li a .aLine {
+  display: block; /* 使 .aLine 成为块级元素 */
+  width: 60%; /* 调整线条宽度 */
+  margin: 0 auto; /* 使线条居中 */
+  border-bottom: 1px solid #909FA6; /* 设置线条颜色和厚度 */
+  margin-top: 2dvh; /* 调整线条与下一个菜单项之间的间距 */
+  transition: border-bottom-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.menu li a:hover .aLine {
+  border-bottom-color: #FF00FF; /* 设置悬停时的线条颜色 */
 }
 
 .showmenu {
   display: block;
-  color: #69ca62;
+  // color: #69ca62;
   padding: 1em;
   text-decoration: none;
+
+.fa-solid{
+  font-size: 1.6em;
+  margin-top: 0.7dvh;
+  color:#909FA6;
+
 }
+
+.fa-solid:hover {
+  font-size: 1.6em;
+  margin-top: 0.7dvh;
+  color: #FF00FF; 
+}
+
+}
+
+
 
 .menu-show {
   max-height: 60dvh;
   width: 100%;
+
 }
 
 /* PC: 1200px 以上 */
