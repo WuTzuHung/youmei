@@ -118,10 +118,14 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // background-color: #81a6ef;
+    background-color: rgb(245, 206, 206);
     
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
+
+    
+    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    //     backdrop-filter: blur( 4px );
+    //     -webkit-backdrop-filter: blur( 4px );
         // border-bottom-left-radius: 10px; /* 左下角圓角 */
         // border-bottom-right-radius: 10px; /* 右下角圓角 */
 

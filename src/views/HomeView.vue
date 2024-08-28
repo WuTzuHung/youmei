@@ -35,7 +35,20 @@ onMounted(() => {
 </div>
 
 <div class="Third">
+  <div class="ourService">
+    <img class="broomImg" src="/pictures/broom.svg" alt="">
+    <h2>服務項目</h2>
+  </div>
 
+  <div class="aboutUs">
+    <img class="groupImg" src="/pictures/group.svg" alt="">
+    <h2>關於我們</h2>
+  </div>
+
+  <div class="contactUs">
+    <img class="contact-mailImg" src="/pictures/contact-mail.svg" alt="">
+    <h2>聯絡我們</h2>
+  </div>
 </div>
 
 <div class="Fourth">
@@ -46,16 +59,15 @@ onMounted(() => {
 <style>
 
 body {
-  /* font-family: 'Noto Sans JP', sans-serif; */
-  background-color: rgba(182, 180, 177, 0.25);
-  position: relative; /* 确保它可以有 z-index */
-  z-index: 500; /* 设置一个低于 Header.vue 的 z-index 值 */
+  position: relative; 
+  z-index: 500; 
+  background-image: url('/pictures/00123.png');
 }
 
 .Second{
   width: 100%;
   height: 18dvh;
-  /* background-color: white; */
+  margin-top: 5dvh;
 }
 
 
@@ -68,9 +80,10 @@ body {
   font-size: 1.8em;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
-  color: #909FA6;
-  opacity: 0; /* 初始状态隐藏文字 */
-  transition: opacity 0.4s ease-in-out; /* 确保文字显示有过渡效果 */
+  
+  color: white;
+  opacity: 0; /* 初始隱藏文字 */
+  transition: opacity 0.4s ease-in-out; /* 確保文字過度效果 */
 }
 
 .passing-2 {
@@ -101,7 +114,7 @@ body {
 }
 
 .passing-2.move .passing-txt {
-  animation: text-appear-animation 0.4s ease forwards 0.4s; /* 动画结束后显示文字 */
+  animation: text-appear-animation 0.4s ease forwards 0.4s; /* 動畫結束後顯示文字 */
 }
 
 @keyframes passing-bar-animation {
@@ -135,8 +148,111 @@ body {
 
 .Third{
   width: 100%;
-  height: 110dvh;
+  height: 180dvh;
   /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .ourService{
+    width: 70%;
+    height: 37dvh;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+    .broomImg{
+      width: 40%;
+      margin-top: 5dvh;
+    }
+
+    h2{
+      font-size: 1.8em;
+      font-weight: 400;
+      font-family: "Noto Sans TC", sans-serif;
+      color: white;
+
+      margin-top: 5dvh;
+      
+    }
+  }
+
+
+  .aboutUs{
+    width: 70%;
+    height: 40dvh;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .groupImg{
+      width: 40%;
+      margin-top: 5dvh;
+    }
+
+    h2{
+      font-size: 1.8em;
+      font-weight: 400;
+      font-family: "Noto Sans TC", sans-serif;
+      color: white;
+
+      margin-top: 5dvh;
+      
+    }
+  }
+
+  .contactUs{
+    width: 70%;
+    height: 40dvh;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .contact-mailImg{
+      width: 40%;
+      margin-top: 5dvh;
+    }
+
+    h2{
+      font-size: 1.8em;
+      font-weight: 400;
+      font-family: "Noto Sans TC", sans-serif;
+      color: white;
+
+      margin-top: 5dvh;
+      
+    }
+  }
+
 }
 
 .Fourth{
