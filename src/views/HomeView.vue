@@ -36,17 +36,17 @@ onMounted(() => {
 
 <div class="Third">
   <div class="ourService">
-    <img class="broomImg" src="/pictures/broom.svg" alt="">
+    <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
 
   <div class="aboutUs">
-    <img class="groupImg" src="/pictures/group.svg" alt="">
+    <img class="groupImg" src="/pictures/group.png" alt="">
     <h2>關於我們</h2>
   </div>
 
   <div class="contactUs">
-    <img class="contact-mailImg" src="/pictures/contact-mail.svg" alt="">
+    <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
     <h2>聯絡我們</h2>
   </div>
 </div>
