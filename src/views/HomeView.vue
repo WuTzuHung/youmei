@@ -35,17 +35,17 @@ onMounted(() => {
 </div>
 
 <div class="Third">
-  <div class="ourService">
+  <div class="wow animate__animated animate__fadeInUp ourService">
     <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
 
-  <div class="aboutUs">
+  <div class=" wow animate__animated animate__fadeInUp aboutUs">
     <img class="groupImg" src="/pictures/group.png" alt="">
     <h2>關於我們</h2>
   </div>
 
-  <div class="contactUs">
+  <div class="wow animate__animated animate__fadeInUp contactUs">
     <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
     <h2>聯絡我們</h2>
   </div>
@@ -164,16 +164,17 @@ body {
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: box-shadow 1s, background-color 1s,filter 1s;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
+    transition: transform 0.3s ease;
 
     .broomImg{
-      width: 40%;
+      width: 30%;
       margin-top: 5dvh;
     }
 
@@ -187,17 +188,22 @@ body {
       
     }
   }
+  
+  .ourService:hover{
+    transform: translateY(-25px)
+  }
 
 
   .aboutUs{
     width: 70%;
-    height: 40dvh;
+    height: 37dvh;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: transform 0.3s ease;
 
     display: flex;
     flex-direction: column;
@@ -206,7 +212,7 @@ body {
     cursor: pointer;
 
     .groupImg{
-      width: 40%;
+      width: 30%;
       margin-top: 5dvh;
     }
 
@@ -221,15 +227,20 @@ body {
     }
   }
 
+  .aboutUs:hover{
+    transform: translateY(-25px)
+  }
+
   .contactUs{
     width: 70%;
-    height: 40dvh;
+    height: 37dvh;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: transform 0.3s ease;
 
     display: flex;
     flex-direction: column;
@@ -238,7 +249,7 @@ body {
     cursor: pointer;
 
     .contact-mailImg{
-      width: 40%;
+      width: 30%;
       margin-top: 5dvh;
     }
 
@@ -251,6 +262,10 @@ body {
       margin-top: 5dvh;
       
     }
+  }
+
+  .contactUs:hover{
+    transform: translateY(-25px)
   }
 
 }
@@ -272,9 +287,37 @@ body {
 
 /* PC: 1200px 以上 */
 @media (min-width: 1200px) {
-    .Container {
-        background-color: red; 
-    }
+
+
+    .Third{
+  height: 260dvh;
+  align-items: flex-start;
+  /* flex-direction: row; */
+
+  .ourService{
+    width: 18%;
+    margin-bottom: 30dvh;
+    margin-left: 8%;
+  }
+
+  .aboutUs{
+    width: 18%;
+    margin-bottom: 30dvh;
+    margin-left: 8%;
+
+
+  }
+
+  .contactUs{
+    width: 18%;
+    margin-bottom: 30dvh;
+    margin-left: 8%;
+
+    
+  }
+
+
+  }
   
 }
 
