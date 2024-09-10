@@ -35,7 +35,7 @@ onMounted(() => {
 </div>
 
 <div class="Third">
-  <div class="wow animate__animated animate__fadeInUp ourService">
+  <div class="wow animate__animated animate__fadeInUp ourService" data-wow-delay="1.47s">
     <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
