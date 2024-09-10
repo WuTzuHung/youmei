@@ -109,12 +109,24 @@ body {
   background: #D2D5B8;
 }
 
-.passing-2.move .passing-bar::before {
+
+
+/* 第一个动画，正常运行 */
+.passing-2.move:nth-of-type(1) .passing-bar::before {
   animation: passing-bar-animation 0.4s ease forwards, passing-bar-disappear-animation 0.4s ease forwards 0.4s;
 }
 
-.passing-2.move .passing-txt {
-  animation: text-appear-animation 0.4s ease forwards 0.4s; /* 動畫結束後顯示文字 */
+.passing-2.move:nth-of-type(1) .passing-txt {
+  animation: text-appear-animation 0.4s ease forwards 0.4s;
+}
+
+/* 第二个动画，延迟 0.8s 后开始 */
+.passing-2.move:nth-of-type(2) .passing-bar::before {
+  animation: passing-bar-animation 0.4s ease forwards 0.8s, passing-bar-disappear-animation 0.4s ease forwards 1.2s;
+}
+
+.passing-2.move:nth-of-type(2) .passing-txt {
+  animation: text-appear-animation 0.4s ease forwards 1.2s;
 }
 
 @keyframes passing-bar-animation {
