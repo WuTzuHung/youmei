@@ -35,7 +35,7 @@ onMounted(() => {
 </div>
 
 <div class="Third">
-  <div class="wow animate__animated animate__fadeInUp ourService" data-wow-delay="1.47s">
+  <div class="wow animate__animated animate__fadeInUp ourService" data-wow-delay="1.2s">
     <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
@@ -124,11 +124,11 @@ body {
 
 /* 第二个动画，延迟 0.8s 后开始 */
 .passing-2.move:nth-of-type(2) .passing-bar::before {
-  animation: passing-bar-animation 0.3s ease forwards 0.6s, passing-bar-disappear-animation 0.3s ease forwards 1.1s;
+  animation: passing-bar-animation 0.3s ease forwards 0.6s, passing-bar-disappear-animation 0.3s ease forwards 0.95s;
 }
 
 .passing-2.move:nth-of-type(2) .passing-txt {
-  animation: text-appear-animation 0.3s ease forwards 1.2s;
+  animation: text-appear-animation 0.3s ease forwards 1.02s;
 }
 
 @keyframes passing-bar-animation {
