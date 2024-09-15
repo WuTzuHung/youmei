@@ -172,10 +172,10 @@ body {
   .ourService{
     width: 70%;
     height: 37dvh;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: box-shadow 1s, background-color 1s,filter 1s;
@@ -211,10 +211,10 @@ body {
   .aboutUs{
     width: 70%;
     height: 37dvh;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: transform 0.3s ease;
@@ -248,10 +248,10 @@ body {
   .contactUs{
     width: 70%;
     height: 37dvh;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     transition: transform 0.3s ease;
@@ -301,6 +301,13 @@ body {
 
 /* PC: 1200px 以上 */
 @media (min-width: 1200px) {
+
+  body {
+
+  background-image: url('/pictures/brick-wall--dark--1920x1080.png');
+  background-size: cover;         /* 确保背景图片覆盖整个元素 */
+  background-position: center;    /* 背景图片居中显示 */
+}
 
 
     .Third{
