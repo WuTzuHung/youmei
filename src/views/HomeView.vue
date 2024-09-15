@@ -61,7 +61,9 @@ onMounted(() => {
 body {
   position: relative; 
   z-index: 500; 
-  background-image: url('/pictures/00123.png');
+  background-image: url('/pictures/brick-wall--dark--640x1136.png');
+  background-size: cover;         /* 确保背景图片覆盖整个元素 */
+  background-position: center;    /* 背景图片居中显示 */
 }
 
 .Second{
@@ -202,7 +204,7 @@ body {
   }
   
   .ourService:hover{
-    transform: translateY(-25px)
+    transform: translateY(-25px);
   }
 
 
@@ -240,7 +242,7 @@ body {
   }
 
   .aboutUs:hover{
-    transform: translateY(-25px)
+    transform: translateY(-25px);
   }
 
   .contactUs{
@@ -277,7 +279,7 @@ body {
   }
 
   .contactUs:hover{
-    transform: translateY(-25px)
+    transform: translateY(-25px);
   }
 
 }
