@@ -40,12 +40,12 @@ onMounted(() => {
     <h2>服務項目</h2>
   </div>
 
-  <div class=" wow animate__animated animate__fadeInUp aboutUs">
+  <div class=" wow animate__animated animate__fadeInUp aboutUs" data-wow-delay="0.7s">
     <img class="groupImg" src="/pictures/group.png" alt="">
     <h2>關於我們</h2>
   </div>
 
-  <div class="wow animate__animated animate__fadeInUp contactUs">
+  <div class="wow animate__animated animate__fadeInUp contactUs" data-wow-delay="0.7s">
     <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
     <h2>聯絡我們</h2>
   </div>
