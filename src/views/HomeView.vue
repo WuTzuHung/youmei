@@ -61,6 +61,7 @@ onMounted(() => {
 body {
   position: relative; 
   z-index: 500; 
+  background-color: #13a988;
   background-image: url('/pictures/brick-wall--dark--640x1136.png');
   background-size: cover;         /* 确保背景图片覆盖整个元素 */
   background-position: center;    /* 背景图片居中显示 */
