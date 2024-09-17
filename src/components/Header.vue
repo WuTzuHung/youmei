@@ -119,7 +119,10 @@ export default {
     justify-content: space-between;
     align-items: center;
     // background-color: #81a6ef;
-    background-color: rgb(245, 206, 206);
+    // background-color: rgb(245, 206, 206);
+    background-image: url('/pictures/brick-wall-dark.png');
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
     
 
     
@@ -137,14 +140,14 @@ export default {
 // background-color: rgba(182, 180, 177, 0.25);
 
 .goHomePage{
-        font-size: 1.4em;
+        font-size: 1.6em;
         font-weight: 746;
 
         font-family: "Noto Sans TC", sans-serif;
         margin-left: 4%;
-        color:#909FA6;
+        color:#D1E0E9;
         text-decoration: none;
-        text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+        // text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
 }
@@ -157,7 +160,7 @@ export default {
   top: 9.4dvh;
   width: 100%;
   text-align: center;
-  background: white;
+  background: linear-gradient(135deg, #20c997, #0b5f56);
   transition: max-height 0.5s;
 
   //把左邊跑出來的marker去掉
@@ -176,7 +179,7 @@ export default {
 }
 
 .menu li a {
-  color:#909FA6;
+  color: #f0f0f0;
   font-weight: 400;
   font-family: "Noto Sans TC", sans-serif;
 
@@ -190,22 +193,22 @@ export default {
 
 }
 
-.menu li a:hover {
-  background: #FFD8F0;
-  color: #FF00FF;
-}
+// .menu li a:hover {
+//   background: #2e2e2e;
+//   color: #f5f5dc;
+// }
 
 .menu li a .aLine {
   display: block; /* 使 .aLine 成为块级元素 */
   width: 60%; /* 调整线条宽度 */
   margin: 0 auto; /* 使线条居中 */
-  border-bottom: 1px solid #909FA6; /* 设置线条颜色和厚度 */
+  border-bottom: 1px solid #f0f0f0; /* 设置线条颜色和厚度 */
   margin-top: 2dvh; /* 调整线条与下一个菜单项之间的间距 */
   transition: border-bottom-color 0.3s ease; /* 添加过渡效果 */
 }
 
 .menu li a:hover .aLine {
-  border-bottom-color: #FF00FF; /* 设置悬停时的线条颜色 */
+  border-bottom-color: #f5f5dc; /* 设置悬停时的线条颜色 */
 }
 
 .showmenu {
@@ -217,14 +220,15 @@ export default {
 .fa-solid{
   font-size: 1.6em;
   margin-top: 0.7dvh;
-  color:#909FA6;
+  color:#D1E0E9;
+  // transition: border-bottom-color 0.3s ease; /* 添加过渡效果 */
+
 
 }
 
 .fa-solid:hover {
-  font-size: 1.6em;
-  margin-top: 0.7dvh;
-  color: #FF00FF; 
+
+  // color: #FF00FF; 
 }
 
 }

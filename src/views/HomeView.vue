@@ -204,9 +204,7 @@ body {
     }
   }
   
-  .ourService:hover{
-    transform: translateY(-25px);
-  }
+ 
 
 
   .aboutUs{
@@ -242,9 +240,7 @@ body {
     }
   }
 
-  .aboutUs:hover{
-    transform: translateY(-25px);
-  }
+
 
   .contactUs{
     width: 70%;
@@ -277,10 +273,6 @@ body {
       margin-top: 5dvh;
       
     }
-  }
-
-  .contactUs:hover{
-    transform: translateY(-25px);
   }
 
 }
@@ -322,12 +314,19 @@ body {
     margin-left: 8%;
   }
 
+  .ourService:hover{
+    transform: translateY(-25px);
+  }
+
   .aboutUs{
     width: 18%;
     margin-bottom: 30dvh;
     margin-left: 8%;
 
+  }
 
+  .aboutUs:hover{
+    transform: translateY(-25px);
   }
 
   .contactUs{
@@ -335,7 +334,10 @@ body {
     margin-bottom: 30dvh;
     margin-left: 8%;
 
-    
+  }
+
+  .contactUs:hover{
+    transform: translateY(-25px);
   }
 
 
