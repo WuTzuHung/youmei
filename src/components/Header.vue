@@ -119,7 +119,7 @@ export default {
   overflow: hidden;
   display: block;
   position: absolute;
-  top: 9.4dvh;
+  top: 10dvh;
   width: 100%;
   text-align: center;
   background: linear-gradient(135deg, #20c997, #0b5f56);
