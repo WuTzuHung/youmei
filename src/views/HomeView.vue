@@ -70,7 +70,7 @@ body {
 .Second{
   width: 100%;
   height: 18dvh;
-  margin-top: 5dvh;
+  margin-top: 10dvh;
 }
 
 
@@ -300,6 +300,20 @@ body {
   background-image: url('/pictures/brick-wall--dark--1920x1080.png');
   background-size: cover;         /* 确保背景图片覆盖整个元素 */
   background-position: center;    /* 背景图片居中显示 */
+}
+
+.Second{
+  width: 100%;
+  height: 16dvh;
+  margin-top: 12dvh;
+  margin-bottom: 5dvh;
+}
+
+
+
+.passing-txt {
+  font-size: 2.6em;
+
 }
 
 

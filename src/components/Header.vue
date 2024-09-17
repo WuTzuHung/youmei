@@ -49,63 +49,23 @@ export default {
 
 <style scoped lang="scss">
 
-.headerShow {
-    width: 100%;
-    min-height: 10dvh;
-        // background: rgba( 255, 255, 255, 0.25 );
-        // background-color: white;
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-bottom-left-radius: 10px; /* 左下角圓角 */
-        border-bottom-right-radius: 10px; /* 右下角圓角 */
-    display: flex;
-    justify-content: space-between;
-    // justify-content: center;
-    align-items: center;
-    // letter-spacing: 2px;
-    // font-family: 'Press Start 2P', 'keifontregular', 'Kosugi Maru', cursive;
-
-    .goHomePage{
-        font-family: "Noto Sans TC", sans-serif;
-        margin-left: 5%;
-        color:#909FA6;
-    }
-
-    .goAboutUs{
-        font-family: "Noto Sans TC", sans-serif;
-        display: none;
-    }
-
+// .headerShow {
+//     width: 100%;
+//     min-height: 10dvh;
     
 
-    a {
-        // margin: 0 auto 0.3rem auto;
-    // margin-top: 5dvh;
-    display: flex;
-    justify-content: center;
-    align-content:center;
-        // font-family: 'Press Start 2P', 'Kosugi Maru';
-        color: rgba(246, 75, 95, 0.992);
-        font-size: 1.2em;
-        text-decoration: none;
-        text-shadow: 2px 1px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.15);
+//     .goHomePage{
+//         font-family: "Noto Sans TC", sans-serif;
+//         margin-left: 5%;
+//         color:#909FA6;
+//     }
 
-        // &:hover {
-        //     border-radius: 10px;
-        //     background-color: rgba(129, 255, 196, 0.27);
-        //     font-size: 40px;
-        //     color: black;
-        //     box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.2);
-        // }
+//     .goAboutUs{
+//         font-family: "Noto Sans TC", sans-serif;
+//         display: none;
+//     }
 
-        // &:active {
-        //     border-radius: 10px;
-        //     background-color: rgba(0, 0, 0, 0.344);
-        // }
-    }
-
-}
+// }
 
 .wrap {
   max-width: 100%;
@@ -113,6 +73,8 @@ export default {
 }
 
 .headerTop {
+    width: 100%;
+    height: 10dvh;
     position: relative; /* 确保它可以有 z-index */
     z-index: 1000; /* 设置一个低于 Header.vue 的 z-index 值 */
     display: flex;
@@ -223,7 +185,6 @@ export default {
   color:#D1E0E9;
   // transition: border-bottom-color 0.3s ease; /* 添加过渡效果 */
 
-
 }
 
 .fa-solid:hover {
@@ -244,7 +205,33 @@ export default {
 /* PC: 1200px 以上 */
 @media (min-width: 1200px) {
 
+  .headerTop {
+    height: 12dvh;
 
+.goHomePage{
+  font-size: 2em;
+  margin-left: 3%;
+
+    }
+
+}
+
+.menu {
+  display: none;
+}
+
+.showmenu {
+  display: none;
+
+.fa-solid{
+  display: none;
+
+  }
+
+.fa-solid:hover {
+
+    }
+  }
   
 }
 </style>

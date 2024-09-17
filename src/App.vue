@@ -19,7 +19,7 @@ import HomeView from './views/HomeView.vue'
 
 .header {
   max-width: 100%;
-  height: 15dvh;
+  height: 10dvh;
 }
 
 .content {
