@@ -24,7 +24,7 @@ import HomeView from './views/HomeView.vue'
 
 .content {
   max-width: 100%;
-  height: 85dvh;
+  height: 90dvh;
   text-align: center;
 }
 

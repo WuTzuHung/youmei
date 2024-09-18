@@ -4,13 +4,16 @@ import { ref, onMounted } from 'vue';
 const passingElement1 = ref(null);
 const passingElement2 = ref(null);
 
+
 onMounted(() => {
+
   if (passingElement1.value) {
     passingElement1.value.classList.add('move');
   }
   if (passingElement2.value) {
     passingElement2.value.classList.add('move');
   }
+
 });
 
 </script>
@@ -35,25 +38,22 @@ onMounted(() => {
 </div>
 
 <div class="Third">
-  <div class="wow animate__animated animate__fadeInUp ourService" data-wow-delay="1.2s">
+  <div class="wow animate__animated animate__fadeInUp ourService" data-wow-duration="1.2s" data-wow-delay="1.1s">
     <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
 
-  <div class=" wow animate__animated animate__fadeInUp aboutUs" data-wow-delay="0.7s">
+  <div class=" wow animate__animated animate__fadeInUp aboutUs" data-wow-duration="1.2s" data-wow-delay="1.1s">
     <img class="groupImg" src="/pictures/group.png" alt="">
     <h2>關於我們</h2>
   </div>
 
-  <div class="wow animate__animated animate__fadeInUp contactUs" data-wow-delay="0.7s">
+  <div class="wow animate__animated animate__fadeInUp contactUs" data-wow-duration="1.2s" data-wow-delay="1.1s">
     <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
     <h2>聯絡我們</h2>
   </div>
 </div>
 
-<div class="Fourth">
-
-</div>
 </template>
 
 <style>
@@ -169,6 +169,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 0.01px;
 
   .ourService{
     width: 70%;
@@ -277,12 +278,6 @@ body {
 
 }
 
-.Fourth{
-  width: 100%;
-  height: 30dvh;
-  background-color: white;
-}
-
 
 
 /* iPad: 768 - 1199px */
@@ -304,9 +299,16 @@ body {
 
 .Second{
   width: 100%;
-  height: 16dvh;
-  margin-top: 12dvh;
-  margin-bottom: 5dvh;
+  height: auto;
+  margin-top: 0dvh;
+  margin-bottom: 0dvh;
+  padding: 0.1px;
+}
+
+.passing-total {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10dvh;
 }
 
 
@@ -318,14 +320,15 @@ body {
 
 
     .Third{
-  height: 260dvh;
-  align-items: flex-start;
-  /* flex-direction: row; */
+      height: auto;
+  /* align-items: flex-start; */
+  flex-direction: row; 
 
   .ourService{
     width: 18%;
-    margin-bottom: 30dvh;
-    margin-left: 8%;
+    margin-bottom: 0dvh;
+    margin-left: 0%;
+    margin-top: 10dvh;
   }
 
   .ourService:hover{
@@ -334,8 +337,10 @@ body {
 
   .aboutUs{
     width: 18%;
-    margin-bottom: 30dvh;
-    margin-left: 8%;
+    margin-bottom: 0dvh;
+    margin-left: 0%;
+    animation-delay: 0s;
+    margin-top: 10dvh;
 
   }
 
@@ -345,8 +350,9 @@ body {
 
   .contactUs{
     width: 18%;
-    margin-bottom: 30dvh;
-    margin-left: 8%;
+    margin-bottom: 0dvh;
+    margin-left: 0%;
+    margin-top: 10dvh;
 
   }
 
