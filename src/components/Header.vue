@@ -26,7 +26,7 @@ export default {
         
     </div> -->
     <div class="wrap">
-    <div class="headerTop">
+    <div class="wow animate__animated animate__fadeInDown headerTop" data-wow-delay="1.1s">
         <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
       <!-- <div class="logo"></div> -->
       <ul :class="{'menu': true, 'menu-show': isMenuVisible}">
@@ -82,9 +82,9 @@ export default {
     align-items: center;
     // background-color: #81a6ef;
     // background-color: rgb(245, 206, 206);
-    background-image: url('/pictures/brick-wall-dark.png');
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    background-image: url('/pictures/dark-brick-wall--dark--640x1136.png');
+    background-size: cover;         /* 确保背景图片覆盖整个元素 */
+    background-position: center;    /* 背景图片居中显示 */
     
 
     
@@ -122,8 +122,11 @@ export default {
   top: 10dvh;
   width: 100%;
   text-align: center;
-  background: linear-gradient(135deg, #20c997, #0b5f56);
+  background-image: url('/pictures/wild-flowers-640x1136.png');
+  background-size: cover;         /* 确保背景图片覆盖整个元素 */
+  background-position: center;    /* 背景图片居中显示 */
   transition: max-height 0.5s;
+
 
   //把左邊跑出來的marker去掉
   list-style-type: none;
@@ -207,6 +210,8 @@ export default {
 
   .headerTop {
     height: 12dvh;
+    background-image: url('/pictures/dark-brick-wall--dark--1920x1080.png');
+
 
 .goHomePage{
   font-size: 2em;

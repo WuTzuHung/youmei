@@ -38,20 +38,31 @@ onMounted(() => {
 </div>
 
 <div class="Third">
-  <div class="wow animate__animated animate__fadeInUp ourService" data-wow-duration="1.2s" data-wow-delay="1.1s">
+  <div class="wow animate__animated animate__fadeInUp ourService"  data-wow-delay="1.1s">
     <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
 
-  <div class=" wow animate__animated animate__fadeInUp aboutUs" data-wow-duration="1.2s" data-wow-delay="1.1s">
+  <div class=" wow animate__animated animate__fadeInUp aboutUs"  data-wow-delay="0.2s">
     <img class="groupImg" src="/pictures/group.png" alt="">
     <h2>關於我們</h2>
   </div>
 
-  <div class="wow animate__animated animate__fadeInUp contactUs" data-wow-duration="1.2s" data-wow-delay="1.1s">
+  <div class="wow animate__animated animate__fadeInUp contactUs"  data-wow-delay="0.2s">
     <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
     <h2>聯絡我們</h2>
   </div>
+
+  <div class=" wow animate__animated animate__fadeInUp aboutUs aboutUsPc"  data-wow-delay="1.1s">
+    <img class="groupImg" src="/pictures/group.png" alt="">
+    <h2>關於我們</h2>
+  </div>
+
+  <div class="wow animate__animated animate__fadeInUp contactUs contactUsPc"  data-wow-delay="1.1s">
+    <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
+    <h2>聯絡我們</h2>
+  </div>
+
 </div>
 
 </template>
@@ -69,7 +80,7 @@ body {
 
 .Second{
   width: 100%;
-  height: 18dvh;
+  height: auto;
   margin-top: 10dvh;
 }
 
@@ -276,6 +287,10 @@ body {
     }
   }
 
+  .aboutUsPc, .contactUsPc{
+    display: none;
+  }
+
 }
 
 
@@ -332,7 +347,7 @@ body {
   }
 
   .ourService:hover{
-    transform: translateY(-25px);
+    transform: translateY(-40px);
   }
 
   .aboutUs{
@@ -341,11 +356,12 @@ body {
     margin-left: 0%;
     animation-delay: 0s;
     margin-top: 10dvh;
+    display: none;
 
   }
 
   .aboutUs:hover{
-    transform: translateY(-25px);
+    transform: translateY(-40px);
   }
 
   .contactUs{
@@ -353,15 +369,26 @@ body {
     margin-bottom: 0dvh;
     margin-left: 0%;
     margin-top: 10dvh;
+    display: none;
 
   }
 
   .contactUs:hover{
-    transform: translateY(-25px);
+    transform: translateY(-40px);
   }
 
+  .aboutUsPc, .contactUsPc{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 
   }
+
+  
   
 }
 
