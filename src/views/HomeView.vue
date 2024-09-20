@@ -38,7 +38,7 @@ onMounted(() => {
 </div>
 
 <div class="Third">
-  <div class="wow animate__animated animate__fadeInUp ourService"  data-wow-delay="1.1s">
+  <div class="wow animate__animated animate__fadeInUp ourService"  data-wow-delay="1.3s">
     <img class="broomImg" src="/pictures/broom.png" alt="">
     <h2>服務項目</h2>
   </div>
@@ -53,12 +53,12 @@ onMounted(() => {
     <h2>聯絡我們</h2>
   </div>
 
-  <div class=" wow animate__animated animate__fadeInUp aboutUs aboutUsPc"  data-wow-delay="1.1s">
+  <div class=" wow animate__animated animate__fadeInUp aboutUs aboutUsPc"  data-wow-delay="1.3s">
     <img class="groupImg" src="/pictures/group.png" alt="">
     <h2>關於我們</h2>
   </div>
 
-  <div class="wow animate__animated animate__fadeInUp contactUs contactUsPc"  data-wow-delay="1.1s">
+  <div class="wow animate__animated animate__fadeInUp contactUs contactUsPc"  data-wow-delay="1.3s">
     <img class="contact-mailImg" src="/pictures/contact-us.png" alt="">
     <h2>聯絡我們</h2>
   </div>
@@ -127,20 +127,20 @@ body {
 
 /* 第一个动画，正常运行 */
 .passing-2.move:nth-of-type(1) .passing-bar::before {
-  animation: passing-bar-animation 0.3s ease forwards, passing-bar-disappear-animation 0.3s ease forwards 0.3s;
+  animation: passing-bar-animation 0.25s ease forwards, passing-bar-disappear-animation 0.25s ease forwards 0.3s;
 }
 
 .passing-2.move:nth-of-type(1) .passing-txt {
-  animation: text-appear-animation 0.3s ease forwards 0.4s;
+  animation: text-appear-animation 0.25s ease forwards 0.51s;
 }
 
 /* 第二个动画，延迟 0.8s 后开始 */
 .passing-2.move:nth-of-type(2) .passing-bar::before {
-  animation: passing-bar-animation 0.3s ease forwards 0.6s, passing-bar-disappear-animation 0.3s ease forwards 0.95s;
+  animation: passing-bar-animation 0.3s ease forwards 0.55s, passing-bar-disappear-animation 0.3s ease forwards 0.85s;
 }
 
 .passing-2.move:nth-of-type(2) .passing-txt {
-  animation: text-appear-animation 0.3s ease forwards 1.02s;
+  animation: text-appear-animation 0.3s ease forwards 1.06s;
 }
 
 @keyframes passing-bar-animation {
