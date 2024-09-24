@@ -39,7 +39,7 @@ onMounted(() => {
 
 <div class="Third">
   <div class="wow animate__animated animate__fadeInUp ourService"  data-wow-delay="1.3s">
-    <img class="broomImg" src="/pictures/broom.png" alt="">
+    <img class="broomImg" src="/pictures/flying-broom.png" alt="">
     <h2>服務項目</h2>
   </div>
 
@@ -92,7 +92,7 @@ body {
 
 .passing-txt {
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 550;
   font-family: "Noto Sans TC", sans-serif;
   
   color: white;
@@ -207,7 +207,7 @@ body {
 
     h2{
       font-size: 1.8em;
-      font-weight: 400;
+      font-weight: 550;
       font-family: "Noto Sans TC", sans-serif;
       color: white;
 
@@ -243,7 +243,7 @@ body {
 
     h2{
       font-size: 1.8em;
-      font-weight: 400;
+      font-weight: 550;
       font-family: "Noto Sans TC", sans-serif;
       color: white;
 
@@ -278,7 +278,7 @@ body {
 
     h2{
       font-size: 1.8em;
-      font-weight: 400;
+      font-weight: 550;
       font-family: "Noto Sans TC", sans-serif;
       color: white;
 

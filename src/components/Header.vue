@@ -26,7 +26,7 @@ export default {
         
     </div> -->
     <div class="wrap">
-    <div class="wow animate__animated animate__fadeInDown headerTop" data-wow-delay="1.3s">
+    <div class="headerTop">
         <RouterLink to="/" class="goHomePage">優美環境清潔</RouterLink>
       <!-- <div class="logo"></div> -->
       <ul :class="{'menu': true, 'menu-show': isMenuVisible}">
