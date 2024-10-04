@@ -69,6 +69,11 @@ onMounted(() => {
 
 <style>
 
+html, body{
+    overflow-y: hidden; /* 隱藏垂直滾動條 */
+    height: 100%; /* 確保高度占滿整個頁面 */
+}
+
 body {
   position: relative; 
   z-index: 500; 
@@ -76,6 +81,7 @@ body {
   background-image: url('/pictures/brick-wall--dark--640x1136.png');
   background-size: cover;         /* 确保背景图片覆盖整个元素 */
   background-position: center;    /* 背景图片居中显示 */
+  overflow: hidden;
 }
 
 .Second{
