@@ -69,10 +69,7 @@ onMounted(() => {
 
 <style>
 
-html, body{
-    overflow-y: hidden; /* 隱藏垂直滾動條 */
-    height: 100%; /* 確保高度占滿整個頁面 */
-}
+
 
 body {
   position: relative; 
