@@ -69,8 +69,6 @@ onMounted(() => {
 
 <style>
 
-
-
 body {
   position: relative; 
   z-index: 500; 
@@ -307,11 +305,16 @@ body {
 /* PC: 1200px 以上 */
 @media (min-width: 1200px) {
 
+  html, body{
+    overflow-y: hidden;
+  }
+
   body {
 
   background-image: url('/pictures/brick-wall--dark--1920x1080.png');
   background-size: cover;         /* 确保背景图片覆盖整个元素 */
   background-position: center;    /* 背景图片居中显示 */
+  
 }
 
 .Second{
